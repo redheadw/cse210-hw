@@ -1,4 +1,7 @@
 using System;
+using System.Net.Http;
+using System.Text.Json;
+using System.Threading.Tasks;
 
 //Word class/ show text and hide words
 public class Word
@@ -10,21 +13,12 @@ public class Word
         _text = text;
         _isHidden = false;
     }
-    public void Hide()
-    {
-        _isHidden = true;
-    }
-    public void Show()
-    {
-        _isHidden = false;
-    }
-    public bool _IsHidden()
-    {
-        return _isHidden;
-    }
-    public string GetDisplayText()
-    {
-        return _isHidden ? "___" : _text;
-    }
+    public void Hide() => _isHidden = true;
+    
+    public string GetDisplayText() => _isHidden ? "__" : _text;
+              
+    public bool IsHidden() => _isHidden;
+           
+    
 }   
 
