@@ -1,4 +1,7 @@
 using System;
+using System.Net.Http;
+using System.Text.Json;
+using System.Threading.Tasks;
 //Reference class book, chapter, and verses
 public class Reference
 {
@@ -24,15 +27,7 @@ public class Reference
         _endVerse = endVerse;
     }
     //Getter
-    public string GetDisplayText()
-    {
-        if (_endVerse == -1)
-        {
-            return $"{_book} {_chapter}:{_verse}";
-        }
-        else
-        {
-            return $"{_book} {_chapter}:{_verse}-{_endVerse}";
-        }
-    }
+    public string GetDisplayText() =>
+        _endVerse == -1 ? $"{_book} {_chapter}:{_verse}" : $"{_book} {_chapter}:{_verse}-{_endVerse}";
+
 }
