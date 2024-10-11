@@ -1,0 +1,6 @@
+ProductName, ProductID, PricePerUnit, Quantity, CustomerName, Street Address, City, State, Country
+dakin, 123, 2.50, 5, Gwyn Wright, 14506 E 110th PL N, Owasso, OK 74055, USA
+curly, 456, 4.80, 1, Gwyn Wright, 14506 E 110th PL N, Owasso, OK 74055, USA
+ThingaMajig, 789, 5.00, 2, Gwyn Wright, 14506 E 110th PL N, Owasso, OK 74055, USA
+suprise, 963, 10.00, 1, John Smith, 1720 Oak Street, Winnapeg, SK, Canada
+dakin, 123, 2.50,  3, John Smith, 1720 Oak Street, Winnapeg, SK, Canada  
